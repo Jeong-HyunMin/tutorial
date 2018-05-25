@@ -27,7 +27,7 @@ public class FileManager extends JFrame {
 	DefaultTreeModel treeModel2;
 
 	public FileManager() {
-		super("File Manager");
+		super("");
 		File dir = new File("D://");
 		File[] files;
 		FileFilter fileFilter = new FileFilter() {
@@ -87,16 +87,18 @@ public class FileManager extends JFrame {
 			}
 		}
 
+		/*cb1.addItemListener(this);
+		language[].addItemListener(this);
+		p3.addItemListener(this);
+		label1.addItemListener(this);
+		label2.addItemListener(this);*/
 		setLayout(new BorderLayout());
 		add(p1, BorderLayout.NORTH);
 		add(p2, BorderLayout.WEST);
 		add(p3, BorderLayout.SOUTH);
 		add(p4, BorderLayout.CENTER);
 
-		if (cb1.getSelectedItem() == "English")
-			p3.add(label2); 					// ...??????
-		else
-			p3.add(label1);
+		
 		sp1.setViewportView(p2);
 		sp1.setPreferredSize(new Dimension(150, 100));
 		add(sp1, BorderLayout.WEST);
@@ -119,3 +121,24 @@ public class FileManager extends JFrame {
 	}
 
 }
+
+
+
+/*class ComboboxListener implements ItemListener {
+
+	@Override
+	public void itemStateChanged(ItemEvent e) {
+		
+		if (cb1.getSelectedObjects().equals(language[0])) {
+			p3.add(label1);
+			setTitle("파일관리자");
+		}
+		else {
+			p3.add(label2);
+			setTitle("File Manager");
+		}
+		
+	}
+
+	
+}*/
