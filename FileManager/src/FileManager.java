@@ -230,7 +230,7 @@ public class FileManager extends JFrame implements ItemListener {
 
 
 
-class ComboboxListener implements ItemListener {		//Combobox ¼±ÅÃÀ¸·Î ¾ğ¾î º¯°æÇÏ´Â ºÎºĞ (¾ÆÁ÷ ±¸ÇöÇÏÁö ¸øÇÔ)
+/*class ComboboxListener implements ItemListener {		//Combobox ¼±ÅÃÀ¸·Î ¾ğ¾î º¯°æÇÏ´Â ºÎºĞ (¾ÆÁ÷ ±¸ÇöÇÏÁö ¸øÇÔ)
 
 	@Override
 	public void itemStateChanged(ItemEvent e) {
@@ -257,4 +257,4 @@ class ComboboxListener implements ItemListener {		//Combobox ¼±ÅÃÀ¸·Î ¾ğ¾î º¯°æÇ
 	public ComboboxListener () {
 		super();
 	}
-}
+}*/
